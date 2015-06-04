@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:id="@+id/sp_color"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/sp_image"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/doctor"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sp_color1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_gravity="bottom|center">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Welcome to my tapCard"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="#ff7f7f"
+            android:layout_gravity="bottom|center_horizontal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Dick Chan"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_gravity="bottom|center_horizontal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Company A"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_gravity="bottom|center_horizontal" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="Manager"
+            android:textSize="17dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_gravity="bottom|center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>
