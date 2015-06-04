@@ -71,13 +71,13 @@ public class MainActivity extends ActionBarActivity {
                     //LinearLayout m_bottomLayout = (LinearLayout) m_view.findViewById(R.id.sp_linh);
                     // final RelativeLayout myRelView = new RelativeLayout(this);
                     if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                        m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 500), getWindowManager().getDefaultDisplay().getHeight()/2 + 150));
-                        m_view.setX(getWindowManager().getDefaultDisplay().getWidth()/6);
-                        m_view.setY(getWindowManager().getDefaultDisplay().getHeight()/4-135);
+                        m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 500), getWindowManager().getDefaultDisplay().getHeight()-50));
+                        m_view.setX((float) 0.35*(getWindowManager().getDefaultDisplay().getHeight()));
+                        m_view.setY((getWindowManager().getDefaultDisplay().getHeight()/2)-(getWindowManager().getDefaultDisplay().getHeight()/2-30));
                     } else {
-                        m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 80), getWindowManager().getDefaultDisplay().getHeight() - 700));
+                        m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 80), (int) (0.75*getWindowManager().getDefaultDisplay().getHeight())));
                         m_view.setX(40);
-                        m_view.setY(250);
+                        m_view.setY((float) (0.15*getWindowManager().getDefaultDisplay().getHeight()));
                     }
 
                     m_view.setTag(i);
@@ -90,14 +90,14 @@ public class MainActivity extends ActionBarActivity {
                             x_cord = event.getRawX();
                             y_cord = event.getRawY();
                             if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                                m_view.setX(getWindowManager().getDefaultDisplay().getWidth()/6);
-                                m_view.setY(getWindowManager().getDefaultDisplay().getHeight()/4-135);
+                                m_view.setX((float) 0.35*(getWindowManager().getDefaultDisplay().getHeight()));
+                                m_view.setY((getWindowManager().getDefaultDisplay().getHeight()/2)-(getWindowManager().getDefaultDisplay().getHeight()/2-30));
 
                             }
                             else
                             {
                                 m_view.setX(40);
-                                m_view.setY(250);
+                                m_view.setY((float) (0.15*getWindowManager().getDefaultDisplay().getHeight()));
                             }
 
                             switch (event.getAction()) {
@@ -153,13 +153,13 @@ public class MainActivity extends ActionBarActivity {
 
                                     if (Likes == 0) {
                                         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                                            m_view.setX(getWindowManager().getDefaultDisplay().getWidth()/6);
-                                            m_view.setY(getWindowManager().getDefaultDisplay().getHeight()/4-135);
+                                            m_view.setX((float) 0.35*(getWindowManager().getDefaultDisplay().getHeight()));
+                                            m_view.setY((getWindowManager().getDefaultDisplay().getHeight()/2)-(getWindowManager().getDefaultDisplay().getHeight()/2-30));
                                         }
                                         else
                                         {
                                             m_view.setX(40);
-                                            m_view.setY(250);
+                                            m_view.setY((float) (0.15*getWindowManager().getDefaultDisplay().getHeight()));
                                         }
                                         m_view.setRotation(0);
                                     } else if (Likes == 1) {
@@ -218,14 +218,14 @@ public class MainActivity extends ActionBarActivity {
 
         LinearLayout m_topLayout = (LinearLayout) m_view.findViewById(R.id.sp_color);
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 500), getWindowManager().getDefaultDisplay().getHeight()/2 + 150));
-            m_view.setX(getWindowManager().getDefaultDisplay().getWidth()/6);
-            m_view.setY(getWindowManager().getDefaultDisplay().getHeight()/4-135);
+            m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 500), getWindowManager().getDefaultDisplay().getHeight()-50));
+            m_view.setX((float) 0.35*(getWindowManager().getDefaultDisplay().getHeight()));
+            m_view.setY((getWindowManager().getDefaultDisplay().getHeight()/2)-(getWindowManager().getDefaultDisplay().getHeight()/2-30));
 
         }  else {
-            m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 80), getWindowManager().getDefaultDisplay().getHeight() - 700));
+            m_view.setLayoutParams(new LinearLayout.LayoutParams((windowwidth - 80), (int) (0.75*getWindowManager().getDefaultDisplay().getHeight())));
             m_view.setX(40);
-            m_view.setY(200);
+            m_view.setY((float) (0.15*getWindowManager().getDefaultDisplay().getHeight()));
         }
         m_image.setBackgroundResource(myImageList[0]);
 
@@ -237,8 +237,8 @@ public class MainActivity extends ActionBarActivity {
                 y_cord = event.getRawY();
 
                 if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    m_view.setX(screenCenter/2-30);
-                    m_view.setY(getWindowManager().getDefaultDisplay().getHeight()/4-135);
+                    m_view.setX((float) 0.35*(getWindowManager().getDefaultDisplay().getHeight()));
+                    m_view.setY((getWindowManager().getDefaultDisplay().getHeight()/2)-(getWindowManager().getDefaultDisplay().getHeight()/2-30));
                 }
                 else
                 {
@@ -294,8 +294,8 @@ public class MainActivity extends ActionBarActivity {
 
                         if (Likes == 0) {
                             if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                                m_view.setX(getWindowManager().getDefaultDisplay().getWidth()/6);
-                                m_view.setY(getWindowManager().getDefaultDisplay().getHeight()/4-135);
+                                m_view.setX((float) 0.35*(getWindowManager().getDefaultDisplay().getHeight()));
+                                m_view.setY((getWindowManager().getDefaultDisplay().getHeight()/2)-(getWindowManager().getDefaultDisplay().getHeight()/2-30));
 
                             }
                             else
